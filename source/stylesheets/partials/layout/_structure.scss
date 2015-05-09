@@ -35,19 +35,20 @@
     float: left;
 
     @include breakpoint($breakpoint-md){
-      @include span-columns(3,9);
+      @include isolate-grid(4);
     }
 
     @include breakpoint($breakpoint-lg){
-      @include span-columns(4,12);
+      @include isolate-grid(4);
     }
 
-    &.last{
-      @include omega;
-    }
   }
 
   .headline{
     width: 100%;
   }
+}
+
+.blog__item{
+  @include span-columns(4,12);
 }
