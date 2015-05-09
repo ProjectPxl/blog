@@ -1,0 +1,17 @@
+.portfolio__item,
+.open-source__item{
+  position: relative;
+  margin-bottom: 25px;
+
+  @include breakpoint($breakpoint-md){
+    .portfolio__item--thumb{
+      border:3px solid $gray;
+    }
+  }
+
+  .portfolio__item--title{
+    color: $dark-gray;
+    margin-top: 6px;
+  }
+
+}

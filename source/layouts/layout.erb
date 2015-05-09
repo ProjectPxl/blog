@@ -14,6 +14,36 @@
   </head>
   
   <body class="<%= page_classes %>">
-    <%= yield %>
+    
+    <section class="blog">
+      <div class="clearfix">
+
+        <div class="bio__wrapper">
+          <div class="bg-orvelay"></div>
+          <div class="bio--photo">
+            <%=image_tag "me.png"%>
+          </div>
+          <div class="bio--desc">
+            <p class="copy">
+              Hi! I'm Paul. <br>
+              My hobby happens to be my job! <br>
+              Javascript is my passion & challenges are my motive.
+            </p>
+            <div class="bio--social">            
+              <a target="_blank" href="https://github.com/ProjectPxl"><div class="icon github"></div></a>
+              <a target="_blank" href="https://twitter.com/projectpxl"><div class="icon twitter"></div></a>
+              <a target="_blank" href="https://www.facebook.com/Maltsevp"><div class="icon facebook"></div></a>
+            </div>
+          </div>
+          <p class="footer--text"><a href="mailto:maltsevp@gmail.com">Speak to me</a> in Russian, Greek or English</p>
+        </div>
+
+        <div class="main-content__wrapper">
+          <%= yield %>
+        </div>
+
+      </div>
+    </section>
+
   </body>
 </html>

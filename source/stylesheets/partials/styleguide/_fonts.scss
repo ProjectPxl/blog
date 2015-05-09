@@ -1,29 +1,9 @@
-@font-face {
-  font-family: 'Frankli-Gothic-Book';
-  src: url('../fonts/frabk/FRABK.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/frabk/FRABK.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/frabk/FRABK.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/frabk/FRABK.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/frabk/FRABK.svg#e95044bdf3d49bd024dea3f387a9411b') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  400;
-}
-
-@font-face {
-  font-family: 'DubielPlain';
-  src: url('../fonts/dubiel/DUBIEL.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/dubiel/DUBIEL.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/dubiel/DUBIEL.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/dubiel/DUBIEL.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/dubiel/DUBIEL.svg#206992e1eb64e7d6db8e927ca8ed1dc9') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  400;
-}
-
 body{
-  font-family: Frankli-Gothic-Book;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-size: 4em;
 }
 
 h2{
@@ -32,7 +12,7 @@ h2{
 
 a{
   text-decoration: none;
-  color: #0f8ed7;
+  color: $blue;
 }
 
 p{
