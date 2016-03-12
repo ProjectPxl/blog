@@ -1,13 +1,17 @@
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Serif', serif;
 }
 
 h1{
-  font-size: 4em;
+  font-size: 2em;
 }
 
 h2{
-  line-height: 2em;
+  line-height: 1.5em;
+}
+
+h3{
+  font-size: 1.25em;
 }
 
 a{
@@ -16,7 +20,14 @@ a{
 }
 
 p{
-  font-size: 1.2em;
+  margin-bottom: 15px;
+
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.8);
 }
 
 
