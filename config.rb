@@ -34,6 +34,7 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", layout: false
+page "articles/*", :layout => :blog_layout
 
 # Change Compass configuration
 # compass_config do |config|
@@ -98,7 +99,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
