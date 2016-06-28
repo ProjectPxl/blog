@@ -52,3 +52,16 @@
 .blog__item{
   @include span-columns(4,12);
 }
+
+.blog-container {
+  max-width: 90%;
+  margin: 0 auto;
+
+  @include breakpoint($breakpoint-md){
+    max-width: 80%;
+  }
+
+  @include breakpoint($breakpoint-lg){
+    max-width: 45em;
+  }
+}
