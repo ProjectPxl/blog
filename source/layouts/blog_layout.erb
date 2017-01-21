@@ -2,10 +2,11 @@
   <body class="<%= page_classes %>">
 
     <section class="blog-header">
-      <a href="/blog"><h1>Common Sense</h1></a>
+      <a href="/<%= env_url %>"><h1>Common Sense</h1></a>
     </section>
 
     <section class="blog-container">
+      
       <div class="article-head">
         <h1 class="article-title"><%=current_page.data.title%></h1>
         <span class="date"><%=DateTime.parse(current_page.data.date).strftime('%e %b %Y') %></span>
@@ -14,6 +15,8 @@
       <article class="article">
         <%= yield %>
       </article>
+
     </section>
+
   </body>
 <% end %>
