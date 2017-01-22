@@ -34,7 +34,7 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", layout: false
-page "articles/*", :layout => :blog_layout
+page "articles/*", :layout => :post_layout
 
 # Change Compass configuration
 # compass_config do |config|
@@ -70,14 +70,14 @@ page "articles/*", :layout => :blog_layout
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-activate :livereload
+# activate :livereload
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def env_url
+    development? ? '' : "/blog"
+  end
+end
 
 set :css_dir, 'stylesheets'
 
@@ -85,15 +85,17 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+# set :relative_links, true
+
 activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash

@@ -1,0 +1,12 @@
+<% wrap_layout :base_layout do %>
+    
+  <div class="article-head">
+    <h1 class="article-title"><%=current_page.data.title%></h1>
+    <span class="date"><%=DateTime.parse(current_page.data.date).strftime('%e %b %Y') %></span>
+  </div>
+
+  <article class="article">
+    <%= yield %>
+  </article>
+
+<% end %>

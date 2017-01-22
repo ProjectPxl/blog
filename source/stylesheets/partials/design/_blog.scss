@@ -1,3 +1,39 @@
+.blog-header {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+  padding: 15px;
+
+  h1 {
+    font-size: 1.5em;
+    color: #454E55;
+    text-align: center;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  @include breakpoint($breakpoint-md){
+    h1 {text-align: left;}
+  }
+}
+
+.article {
+  margin-bottom: 100px;
+ .bleed {
+    @include bleed(2 of 12);
+    padding-left: 0;
+    padding-right: 0;
+
+    img{width: 100%;}
+  }
+}
+
+.article-title {
+  text-transform: capitalize;
+  line-height: 1.2em;
+}
+
 .blog-headline{
   font-size: 2.5em;
   text-align: center;
@@ -8,52 +44,17 @@
   &:hover{color: $blue;}
 }
 
-.article{
-  width: auto;
-
-  @include breakpoint($breakpoint-md){
-    width: 90%;
-    margin: 0 auto;
+.portfolio__item {
+  .article-title {
+    padding: 10px 0;
+    margin-bottom: 25px;
+    border-bottom: 1px solid $gray;
+    display: inline-block;
   }
-
-  @include breakpoint($breakpoint-lg){
-    width: 79%;
-    margin: 0;
-  }
-}
-
-.portfolio__item,
-.open-source__item{
-  position: relative;
-  margin-bottom: 25px;
-
-  @include breakpoint($breakpoint-md){
-    .portfolio__item--thumb{
-      border:3px solid $gray;
-    }
-  }
-
-  .portfolio__item--title{
-    color: $dark-gray;
-    margin-top: 6px;
-    font-family: 'Open Sans', sans-serif;
-  }
-
 }
 
 .article-head{
   margin-bottom: 40px;
-
-  @include breakpoint($breakpoint-md){
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @include breakpoint($breakpoint-lg){
-    margin-left: 0;
-    margin-right: 0;
-  }
 
   .date{
     font-size:.7em;
