@@ -34,7 +34,7 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", layout: false
-page "articles/*", :layout => :blog_layout
+page "articles/*", :layout => :post_layout
 
 # Change Compass configuration
 # compass_config do |config|

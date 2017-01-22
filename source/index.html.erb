@@ -6,8 +6,7 @@
       <% articles.each_with_index do |article| %>
         <li class="portfolio__item">
           <a href="<%= env_url %><%= article.url %>">
-            <img class="portfolio__item--thumb" src="http://dummyimage.com/300x300/c90ec9/fff" alt="<%= article.title %>">
-            <h3 class="portfolio__item--title"><%= article.title %></h3>
+            <h2 class="article-title"><%= article.title %></h2>
           </a>
         </li>
       <% end %>

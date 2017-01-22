@@ -1,46 +1,5 @@
 <% wrap_layout :base_layout do %>
-  <body class="<%= page_classes %>">
-    
-    <section class="blog">
-      <div class="clearfix">
-
-        <div class="bio__wrapper">
-          <div class="bg-orvelay"></div>
-          <a href="www.paulmaltsev.net">
-            <h1 class="blog-headline" title="Common Sense">Common Sense</h1>
-          </a>
-          <%if page_classes == "index"%>
-            <div class="bio--photo">
-              <a target="_blank" href="www.paulmaltsev.net"><%=image_tag "me.png"%></a>
-            </div>
-            <div class="bio--desc">
-              <p class="copy">
-                Hi! I'm Paul. <br>
-                I am a software developer at <a target="_blank" href="http://www.westfieldlabs.com/">Westfield Labs</a>.
-                Periodically, I will be publishing some of my thoughts on this blog about
-                technology, travelling, and thoughts on our society. <br>
-                
-              </p>
-  <!--             <div class="bio--social">            
-                <a target="_blank" href="https://github.com/ProjectPxl"><div class="icon github"></div></a>
-                <a target="_blank" href="https://twitter.com/projectpxl"><div class="icon twitter"></div></a>
-                <a target="_blank" href="https://www.facebook.com/Maltsevp"><div class="icon facebook"></div></a>
-              </div> -->
-            </div>
-          <%else%>
-            <div class="article--social">
-              
-            </div>
-          <%end%>
-          <p class="footer--text"><a href="mailto:maltsevp@gmail.com">Speak to me</a> in Russian, Greek or English</p>
-        </div>
-
-        <div class="main-content__wrapper">
-          <%= yield %>
-        </div>
-
-      </div>
-    </section>
-
-  </body>
+  <section class="blog-container">
+    <%= yield %>
+  </section>
 <% end %>
