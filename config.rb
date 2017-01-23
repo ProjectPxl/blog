@@ -2,6 +2,11 @@
 require 'susy'
 ###
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-90714530-1'
+  ga.domain_name = 'paulmaltsev.net'
+end
+
 ###
 # Blog settings
 ###

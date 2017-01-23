@@ -12,3 +12,5 @@ gem "builder", "~> 3.0"
 gem 'susy'
 gem 'breakpoint'
 gem "jquery-middleman"
+
+gem 'middleman-google-analytics'
